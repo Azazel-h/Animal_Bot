@@ -110,6 +110,7 @@ async def process_animal(message: types.Message, state: FSMContext) -> None:
     await state.finish()
     await MoodBooster.start_cmd.set()
 
+
 async def process_sending(message: types.Message, state: FSMContext) -> None:
     """
     Process of sending a picture and some text
